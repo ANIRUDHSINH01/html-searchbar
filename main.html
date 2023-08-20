@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+    body{
+      background: #E2BEF1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .serch {
+      background-color: white;
+      /* width: 80vw; */
+      display:flex;
+      /* float: center;
+      position : relative;*/
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      height: 5vh;
+      padding: 10px 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .serch input  
+    {
+      border: none;
+     width: 0;
+     padding: 0;
+     outline: none;
+     overflow: hidden;
+     font-weight: 600;
+     transition: 0.8s;
+     background: transparent;
+     visibility: hidden;
+     opacity: 0;
+    }
+    .fas {
+      color: #E2BEf1;
+
+    }
+    .serch:hover input {
+      width: 50vw;
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="serch">
+    <input type="text" placeholder="Search">
+    <i class="fas fa-search"></i>
+  </div>
+</body>
+</html>
